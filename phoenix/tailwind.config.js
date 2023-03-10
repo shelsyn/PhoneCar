@@ -23,6 +23,11 @@ module.exports = {
       blue: colors.blue,
       fuchsia: colors.fuchsia,
       indigo: colors.indigo,
+      gray: colors.gray,
+      gold: {
+        goldTitle: ' #827458',
+        goldText: '#dcb47a',
+      },
     },
     fontSize: {
       xs: ['0.75rem', { lineHeight: '1rem' }],
