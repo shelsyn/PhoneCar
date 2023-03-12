@@ -1,8 +1,35 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 const colors = require('tailwindcss/colors');
+const plugin = require('tailwindcss/plugin');
+
+const MyClass = plugin(function ({ addUtilities }) {
+  addUtilities({
+    '.my-rotate-y-180': {
+      transform: 'rotateY(180deg)',
+    },
+    '.preserve-3d': {
+      transformStyle: 'preserve-3d',
+    },
+    '.perspective': {
+      perspective: '1000px',
+    },
+    '.backface-hidden': {
+      backfaceVisibility: 'hidden',
+    },
+  });
+});
 
 module.exports = {
-  plugins: [require('@tailwindcss/typography'), require('@tailwindcss/forms')],
+  plugins: [
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/forms'),
+    MyClass,
+    plugin(function ({ addVariant }) {
+      addVariant('optional', '&:optional');
+      addVariant('group-optional', ':merge(.group):optional &');
+      addVariant('peer-optional', ':merge(.peer):optional ~ &');
+    }),
+  ],
   content: ['./src/**/*{html,ts,tsx}'],
   darkMode: 'class',
   theme: {
@@ -27,6 +54,11 @@ module.exports = {
       gold: {
         goldTitle: ' #827458',
         goldText: '#dcb47a',
+        goldBg: '#655740',
+        goldSubtitle: '#89734f',
+        goldHover: '#ab8d60',
+        goldHeader: '#faf5ee',
+        goldButton: '#B8A36D',
       },
     },
     fontSize: {
