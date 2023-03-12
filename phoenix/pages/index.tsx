@@ -1,4 +1,4 @@
-import AboutUs from 'AboutUs';
+import Renting from 'Renting';
 import { ContactUs } from 'ContactUs';
 import type { NextPage } from 'next';
 import Head from 'next/head';
@@ -14,8 +14,8 @@ const Home: NextPage = () => {
       </Head>
       <Header />
       <main>
+        <Renting />
         <ContactUs />
-        <AboutUs />
         <Products />
       </main>
       <a href="https://api.whatsapp.com/send/?phone=573023331906&text=Hola,+deseo+cotizar+un+vehículo+con+ustedes." target="_blank" rel="noreferrer" className="fixed bottom-4 right-4">
