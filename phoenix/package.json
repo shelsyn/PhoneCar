@@ -1,5 +1,5 @@
 {
-  "name": "front-prisma",
+  "name": "phoenixcar",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,7 +16,7 @@
     "clsx": "^1.2.1",
     "date-fns": "^2.29.3",
     "file-saver": "^2.0.5",
-    "firebase": "^9.16.0",
+    "firebase": "^9.17.2",
     "focus-visible": "^5.2.0",
     "framer-motion": "^7.6.12",
     "js-cookie": "^3.0.1",
