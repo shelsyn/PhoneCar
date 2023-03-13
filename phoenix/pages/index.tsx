@@ -6,6 +6,7 @@ import Products from 'Products';
 import Header from '../src/Header';
 import TipoPersona from 'TipoPersona';
 import PreHeader from 'PreHeader';
+import Footer from 'Footer';
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
         <Products />
         <ContactUs />
       </main>
+      <Footer />
     </>
   );
 };
