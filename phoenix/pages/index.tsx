@@ -19,8 +19,8 @@ const Home: NextPage = () => {
         <Header />
         <Renting />
         <TipoPersona />
-        <ContactUs />
         <Products />
+        <ContactUs />
       </main>
     </>
   );

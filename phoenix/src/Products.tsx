@@ -4,36 +4,36 @@ const products = [
     name: 'Zip Tote Basket',
     color: 'White and black',
     href: '#',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
+    imageSrc: 'https://images.unsplash.com/photo-1617469767053-d3b523a0b982?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1531&q=80',
     imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
-    price: '$140',
+    price: '$1´400.000',
   },
   {
     id: 1,
     name: 'Zip Tote Basket',
     color: 'White and black',
     href: '#',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
+    imageSrc: 'https://images.unsplash.com/photo-1622653902334-ae450576f128?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
     imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
-    price: '$140',
+    price: '$1´400.000',
   },
   {
     id: 1,
     name: 'Zip Tote Basket',
     color: 'White and black',
     href: '#',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
+    imageSrc: 'https://images.unsplash.com/photo-1607853554251-bd2eed4145da?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80',
     imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
-    price: '$140',
+    price: '$1´400.000',
   },
   {
     id: 1,
     name: 'Zip Tote Basket',
     color: 'White and black',
     href: '#',
-    imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-03-related-product-01.jpg',
+    imageSrc: 'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
-    price: '$140',
+    price: '$1´400.000',
   },
 ];
 
@@ -42,7 +42,7 @@ export default function Products() {
     <section id="products">
       <div className="bg-white">
         <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
-          <h2 className="text-xl font-bold text-gray-900">Nuestras promociones</h2>
+          <h2 className="text-4xl font-bold text-gray-900">Nuestras promociones</h2>
           <div className="mt-8 grid grid-cols-1 gap-y-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
             {products.map((product) => (
               <div key={product.id}>
@@ -62,9 +62,9 @@ export default function Products() {
                 <div className="mt-6">
                   <a
                     href={product.href}
-                    className="relative flex items-center justify-center rounded-md border border-transparent bg-gray-100 py-2 px-8 text-sm font-medium text-gray-900 hover:bg-gray-200"
+                    className="relative flex items-center justify-center rounded-md border border-transparent bg-gold-goldButton py-2 px-8 text-sm font-medium text-gray-900 hover:bg-gold-goldHover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-goldSubtitle"
                   >
-                    Add to bag<span className="sr-only">, {product.name}</span>
+                    Más información<span className="sr-only">, {product.name}</span>
                   </a>
                 </div>
               </div>

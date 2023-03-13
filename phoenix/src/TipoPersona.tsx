@@ -5,7 +5,7 @@ const tiers = [
     name: 'Persona Natural',
     id: 'naturalPerson',
     href: '#',
-    img: 'https://images.unsplash.com/photo-1510903117032-f1596c327647?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+    img: 'https://images.unsplash.com/photo-1592841242879-cae7035f7551?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     description:
       'Estrena vehículo de acuerdo al que mejor se ajuste a tus necesidades cada 48 meses, pagas un valor mensual y despreocúpate de los gastos que pueda tener el carro mantenimientos, seguros, impuestos cambio de llantas.',
     features: [
@@ -58,22 +58,22 @@ export default function TipoPersona() {
             </svg>
           </div>
         </div>
-        <div className="flow-root bg-white pb-24 sm:pb-32">
+        <div className="flow-root bg-white pb-20 sm:pb-32">
           <div className="-mt-80">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
-              <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 lg:grid-cols-2">
+              <div className="mx-auto grid max-w-7xl grid-cols-3 gap-8 lg:grid-cols-2">
                 {tiers.map((tier) => (
                   <div key={tier.id} className="h-[500px] w-[600px] bg-transparent cursor-pointer rounded-lg group perspective">
                     <div className="relative preserve-3d group-hover:my-rotate-y-180 h-full w-full transition-all duration-1000 rounded-lg">
                       <div className="absolute backface-hidden w-full h-full rounded-lg">
-                        <h3 className="text-2xl font-semibold leading-7 text-white mb-2 text-center">{tier.name}</h3>
+                        <h3 className="text-2xl font-semibold leading-10 text-white mb-2 text-center">{tier.name}</h3>
                         <img alt="" className="h-full w-full rounded-lg" src={tier.img} />
                       </div>
                       <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-white rounded-lg">
-                        <div className="text-center flex flex-col justify-center h-full m-5">
-                          <h3 className="text-4xl font-semibold leading-7 text-gold-goldButton">{tier.name}</h3>
-                          <p className="mt-6 text-base leading-7 text-gray-600">{tier.description}</p>
-                          <ul className="mt-10 space-y-4 text-sm leading-6 text-gray-600">
+                        <div className="text-center flex flex-col justify-center h-full m-7">
+                          <h3 className="text-3xl font-semibold leading-7 text-gold-goldButton">{tier.name}</h3>
+                          <p className="mt-6 text-base leading-5 text-gray-600">{tier.description}</p>
+                          <ul className="mt-15 space-y-4 text-sm leading-6 text-gray-600">
                             {tier.features.map((feature) => (
                               <li key={feature} className="flex gap-x-3">
                                 <CheckIcon className="h-6 w-5 flex-none text-yellow-800" aria-hidden="true" />

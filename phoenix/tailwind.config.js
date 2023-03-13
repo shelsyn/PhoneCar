@@ -57,7 +57,7 @@ module.exports = {
         goldBg: '#655740',
         goldSubtitle: '#89734f',
         goldHover: '#ab8d60',
-        goldHeader: '#faf5ee',
+        goldHeader: '#827458',
         goldButton: '#B8A36D',
       },
     },

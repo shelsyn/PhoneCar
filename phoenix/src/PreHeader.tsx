@@ -13,8 +13,8 @@ export default function PreHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <>
-      <header className="bg-gold-goldHeader">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between" aria-label="Global">
+      <header className="#968260">
+        <nav className="mx-auto flex max-w-8xl items-center justify-between" aria-label="Global">
           <div className="flex lg:flex-1">
             <img className="h-[100px] w-[250px]" src="/FDVFD-removebg-preview.png" alt="" />
           </div>
@@ -33,7 +33,7 @@ export default function PreHeader() {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#ContactUs" className="text-lg font-semibold leading-6 text-gray-900">
-              <span className="p-3 rounded-lg bg-gold-goldButton text-white hover:bg-gold-goldBg">Contáctenos</span>
+              <span className="p-3 rounded-lg bg-gold-goldButton text-white hover:#968260">Contáctenos</span>
             </a>
           </div>
         </nav>
