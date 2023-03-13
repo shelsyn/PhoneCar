@@ -35,7 +35,7 @@ export default function HeaderEmpresas() {
             <a
               href="https://api.whatsapp.com/send/?phone=573143532474&text=Hola,+estoy+interesado+en+rentar+un+vehículo,+pordrían+brindarme+más+información,+gracias."
               target="_blank"
-              className="text-lg font-semibold leading-6 text-gray-900"
+              className="text-lg font-semibold leading-6 text-gold-goldButton"
               rel="noreferrer"
             >
               <span className="p-3 rounded-lg bg-gold-goldButton text-white hover:bg-gold-goldBg">Contáctenos</span>
@@ -50,13 +50,13 @@ export default function HeaderEmpresas() {
                 <span className="sr-only">Your Company</span>
                 <img className="h-8" src="./FDVFD-removebg-preview.png" alt="" />
               </a>
-              <button type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700" onClick={() => setMobileMenuOpen(false)}>
+              <button type="button" className="-m-2.5 rounded-md p-2.5 text-gold-goldButton" onClick={() => setMobileMenuOpen(false)}>
                 <span className="sr-only">Close menu</span>
                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/25">
+              <div className="-my-6 divide-y text-gold-goldButton">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <a key={item.name} href={item.href} className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-800">

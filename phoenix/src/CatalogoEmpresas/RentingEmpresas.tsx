@@ -17,7 +17,7 @@ export default function RentingEmpresas() {
     <div className="bg-white pt-24 sm:pt-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:max-w-none">
-          <h2 className="text-3xl text-center font-bold tracking-tight text-slate-900 sm:text-4xl">Renting Empresas</h2>
+          <h2 className="text-3xl text-center font-bold tracking-tight text-gold-goldButton sm:text-4xl">Renting Empresas</h2>
           <div className="text-justify">
             <p className="mt-4 text-lg text-slate-600">
               Es un modelo de tendencia mundial que le permite a las empresas rentar los vehículos para su operación deducible de impuestos y despreocupándose de todos los gastos que genera tener un
