@@ -7,7 +7,7 @@ export function ContactUs() {
         <div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
           <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
             <div className="mx-auto max-w-lg">
-              <h2 className="text-2xl font-bold tracking-tight text-gold-goldText sm:text-3xl">Contáctanos</h2>
+              <h2 className="text-2xl font-bold tracking-tight phoenix_car@outlook.com sm:text-3xl">Contáctanos</h2>
               <p className="mt-3 text-lg leading-6 text-gray-500">Estaremos respondiendo lo mas pronto posible.</p>
               <dl className="mt-8 text-base text-gray-500">
                 <div className="mt-6">
@@ -21,7 +21,7 @@ export function ContactUs() {
                   <dt className="sr-only">Email</dt>
                   <dd className="flex">
                     <EnvelopeIcon className="h-6 w-6 flex-shrink-0 text-gray-400 mr-3" aria-hidden="true" />
-                    <a href="mailto:camiloquinterovargas@gmail.com?Subject=Aquí%20el%20asunto%20del%20mail">camiloquinterovargas@gmail.com</a>
+                    <a href="mailto:phoenix_car@outlook.com?Subject=Aquí%20el%20asunto%20del%20mail">phoenix_car@outlook.com</a>
                   </dd>
                 </div>
               </dl>
@@ -31,6 +31,7 @@ export function ContactUs() {
             <div className="mx-auto max-w-lg lg:max-w-none">
               <form className="grid grid-cols-1 gap-y-6">
                 <div>
+
                   <label htmlFor="name" className="sr-only">
                     Nombre Completo
                   </label>
@@ -39,7 +40,7 @@ export function ContactUs() {
                     name="name"
                     id="name"
                     autoComplete="name"
-                    className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm focus:border-gold-goldText focus:ring-gold-goldText"
+                    className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm phoenix_car@outlook.com phoenix_car@outlook.com"
                     placeholder="Nombre *"
                   />
                 </div>
