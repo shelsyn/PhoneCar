@@ -1,5 +1,5 @@
 export default function Header() {
-  const bgImage = 'https://images.pexels.com/photos/1687147/pexels-photo-1687147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1';
+  const bgImage = './tress.png';
 
   return (
     <section id="Home">
