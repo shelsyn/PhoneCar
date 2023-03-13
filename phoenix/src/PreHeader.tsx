@@ -32,10 +32,6 @@ export default function PreHeader() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-<<<<<<< HEAD
-            <a href="#ContactUs" className="text-lg font-semibold leading-6 text-gray-900">
-              <span className="p-3 rounded-lg bg-gold-goldButton text-white hover:#968260">Contáctenos</span>
-=======
             <a
               href="https://api.whatsapp.com/send/?phone=573143532474&text=Hola,+estoy+interesado+en+rentar+un+vehículo,+pordrían+brindarme+más+información,+gracias."
               target="_blank"
@@ -43,7 +39,6 @@ export default function PreHeader() {
               rel="noreferrer"
             >
               <span className="p-3 rounded-lg bg-gold-goldButton text-white hover:bg-gold-goldBg">Contáctenos</span>
->>>>>>> 7ae9b199d60da50c519a2a772612bb00a2692ac9
             </a>
           </div>
         </nav>
