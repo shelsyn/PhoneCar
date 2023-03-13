@@ -6,6 +6,7 @@ const navigation = {
     { name: 'Renting', href: '#Renting' },
     { name: 'Catálogo', href: '#tipoPersona' },
     // { name: 'Sobre Nosotros', href: '#aboutUs' },
+    { name: 'Promociones', href: '#Promociones' },
   ],
   social: [
     {

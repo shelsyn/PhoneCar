@@ -4,7 +4,7 @@ const tiers = [
   {
     name: 'Persona Natural',
     id: 'naturalPerson',
-    href: '#',
+    href: '/catalogoNatural',
     img: 'https://images.unsplash.com/photo-1592841242879-cae7035f7551?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     description:
       'Estrena vehículo de acuerdo al que mejor se ajuste a tus necesidades cada 48 meses, pagas un valor mensual y despreocúpate de los gastos que pueda tener el carro mantenimientos, seguros, impuestos cambio de llantas.',
@@ -20,7 +20,7 @@ const tiers = [
   {
     name: 'Empresa',
     id: 'company',
-    href: '#',
+    href: '/catalogoEmpresa',
     img: 'https://images.unsplash.com/photo-1587813369290-091c9d432daf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
     description:
       'La renta de vehículos es una tendencia mundial para empresas que quieren evitar los costos de tener un vehículo propio, incluyendo impuestos, seguros y mantenimiento. Se aplica a varios tipos de vehículos para uso personal o comercial.',
@@ -63,13 +63,13 @@ export default function TipoPersona() {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-7xl grid-cols-3 gap-8 lg:grid-cols-2">
                 {tiers.map((tier) => (
-                  <div key={tier.id} className="h-[500px] w-[600px] bg-transparent cursor-pointer rounded-lg group perspective">
-                    <div className="relative preserve-3d group-hover:my-rotate-y-180 h-full w-full transition-all duration-1000 rounded-lg">
-                      <div className="absolute backface-hidden w-full h-full rounded-lg">
+                  <div key={tier.id} className="h-[450px] w-[600px] bg-transparent cursor-pointer rounded-3xl group perspective">
+                    <div className="relative preserve-3d group-hover:my-rotate-y-180 h-full w-full transition-all duration-1000 rounded-3xl">
+                      <div className="absolute backface-hidden w-full h-full rounded-3xl">
                         <h3 className="text-2xl font-semibold leading-10 text-white mb-2 text-center">{tier.name}</h3>
-                        <img alt="" className="h-full w-full rounded-lg" src={tier.img} />
+                        <img alt="" className="h-full w-full rounded-3xl" src={tier.img} />
                       </div>
-                      <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-white rounded-lg">
+                      <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-white rounded-3xl">
                         <div className="text-center flex flex-col justify-center h-full m-7">
                           <h3 className="text-3xl font-semibold leading-7 text-gold-goldButton">{tier.name}</h3>
                           <p className="mt-6 text-base leading-5 text-gray-600">{tier.description}</p>

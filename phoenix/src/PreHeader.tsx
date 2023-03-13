@@ -6,6 +6,7 @@ const navigation = [
   { name: 'Inicio', href: '#Home' },
   { name: 'Renting', href: '#Renting' },
   { name: 'Catálogo', href: '#tipoPersona' },
+  { name: 'Promociones', href: '#Promociones' },
   // { name: 'Sobre Nosotros', href: '#aboutUs' },
 ];
 
@@ -13,8 +14,8 @@ export default function PreHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
     <>
-      <header className="#968260">
-        <nav className="mx-auto flex max-w-8xl items-center justify-between" aria-label="Global">
+      <header className="bg-white">
+        <nav className="mx-12 flex items-center justify-between" aria-label="Global">
           <div className="flex lg:flex-1">
             <img className="h-[100px] w-[250px]" src="/FDVFD-removebg-preview.png" alt="" />
           </div>
@@ -26,7 +27,7 @@ export default function PreHeader() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-lg font-semibold leading-6 text-slate-900">
+              <a key={item.name} href={item.href} className="text-lg font-semibold leading-6 text-gold-goldButton">
                 {item.name}
               </a>
             ))}

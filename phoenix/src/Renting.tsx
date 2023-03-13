@@ -31,11 +31,11 @@ const cards = [
 
 export default function Renting() {
   return (
-    <section id="Renting" className="pt-10">
+    <section id="Renting" className="">
       <div className="relative isolate overflow-hidden bg-white py-1 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-2xl font-bold tracking-tight text-gold-goldButton sm:text-6xl">¿Qué es el renting?</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-gold-goldButton sm:text-5xl">¿Qué es el renting?</h2>
             <p className="mt-6 text-lg text-slate-900">
               El renting es un servicio de alquiler de vehículos a nivel mundial, que ofrece autonomía y control al cliente durante un tiempo determinado. Incluye un paquete de servicios adaptado a
               las necesidades diarias de los clientes.
