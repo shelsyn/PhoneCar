@@ -1,11 +1,12 @@
 import Renting from 'Renting';
-import { ContactUs } from 'ContactUs';
+// import { ContactUs } from 'ContactUs';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Products from 'Products';
+// import Products from 'Products';
 import Header from '../src/Header';
 import TipoPersona from 'TipoPersona';
 import PreHeader from 'PreHeader';
+import Footer from 'Footer';
 
 const Home: NextPage = () => {
   return (
@@ -19,9 +20,10 @@ const Home: NextPage = () => {
         <Header />
         <Renting />
         <TipoPersona />
-        <ContactUs />
-        <Products />
+        {/* <ContactUs /> */}
+        {/* <Products /> */}
       </main>
+      <Footer />
     </>
   );
 };

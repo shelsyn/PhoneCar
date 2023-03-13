@@ -63,13 +63,13 @@ export default function TipoPersona() {
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 lg:grid-cols-2">
                 {tiers.map((tier) => (
-                  <div key={tier.id} className="h-[500px] w-[600px] bg-transparent cursor-pointer rounded-lg group perspective">
-                    <div className="relative preserve-3d group-hover:my-rotate-y-180 h-full w-full transition-all duration-1000 rounded-lg">
-                      <div className="absolute backface-hidden w-full h-full rounded-lg">
+                  <div key={tier.id} className="h-[500px] w-[600px] bg-transparent cursor-pointer rounded-3xl group perspective">
+                    <div className="relative preserve-3d group-hover:my-rotate-y-180 h-full w-full transition-all duration-1000 rounded-3xl">
+                      <div className="absolute backface-hidden w-full h-full rounded-3xl">
                         <h3 className="text-2xl font-semibold leading-7 text-white mb-2 text-center">{tier.name}</h3>
-                        <img alt="" className="h-full w-full rounded-lg" src={tier.img} />
+                        <img alt="" className="h-full w-full rounded-3xl" src={tier.img} />
                       </div>
-                      <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-white rounded-lg">
+                      <div className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-white rounded-3xl">
                         <div className="text-center flex flex-col justify-center h-full m-5">
                           <h3 className="text-4xl font-semibold leading-7 text-gold-goldButton">{tier.name}</h3>
                           <p className="mt-6 text-base leading-7 text-gray-600">{tier.description}</p>
