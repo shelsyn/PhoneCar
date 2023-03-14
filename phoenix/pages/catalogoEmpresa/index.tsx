@@ -2,6 +2,7 @@ import Products from 'Products';
 import RentingEmpresas from 'CatalogoEmpresas/RentingEmpresas';
 import HeaderEmpresas from 'CatalogoEmpresas/HeaderEmpresas';
 import Footer from 'Footer';
+import { ContactUs } from 'ContactUs';
 
 const products = [
   {
@@ -173,6 +174,7 @@ export default function CatalogoEmpresa() {
         </div>
       </section>
       <Products />
+      <ContactUs />
       <Footer />
       <div className="z-[100]">
         <a

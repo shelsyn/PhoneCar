@@ -1,5 +1,6 @@
 import HeaderNatural from 'CatalogoNatural/HeaderNatural';
 import RentingNatural from 'CatalogoNatural/RentingNatural';
+import { ContactUs } from 'ContactUs';
 import Footer from 'Footer';
 import Products from 'Products';
 
@@ -267,6 +268,7 @@ export default function CatalogoPersonaNatural() {
           </div>
         </div>
       </section>
+      <ContactUs />
       <Products />
       <Footer />
       <div className="z-[100]">
