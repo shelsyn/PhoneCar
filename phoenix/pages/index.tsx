@@ -21,7 +21,7 @@ const Home: NextPage = () => {
         <Renting />
         <TipoPersona />
         <Products />
-        { <ContactUs /> }
+       <ContactUs /> 
       </main>
       <Footer />
     </>
