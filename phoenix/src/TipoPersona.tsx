@@ -6,8 +6,7 @@ const tiers = [
     id: 'naturalPerson',
     href: '/catalogoNatural',
     img: 'https://images.unsplash.com/photo-1592841242879-cae7035f7551?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-    description:
-      'Estrena vehículo de acuerdo al que mejor se ajuste a tus necesidades cada 48 meses, pagas un valor mensual .',
+    description: 'Estrena vehículo de acuerdo al que mejor se ajuste a tus necesidades cada 48 meses, pagas un valor mensual .',
     features: [
       'Certificado bancario. Aplica para todas las cuentas fuera de Bancolombia.',
       'Declaración de renta en caso de no declarar renta carta de no declarante.',
@@ -22,8 +21,7 @@ const tiers = [
     id: 'company',
     href: '/catalogoEmpresa',
     img: 'https://images.unsplash.com/photo-1587813369290-091c9d432daf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
-    description:
-      'La renta de vehículos es una tendencia mundial para empresas que quieren evitar los costos de tener un vehículo propio, incluyendo impuestos, seguros y mantenimiento.',
+    description: 'La renta de vehículos es una tendencia mundial para empresas que quieren evitar los costos de tener un vehículo propio, incluyendo impuestos, seguros y mantenimiento.',
     features: [
       'Declaración de renta últimos 3 años. (2019-2020)',
       'Cámara de comercio vigente no mayor a 30 días.',

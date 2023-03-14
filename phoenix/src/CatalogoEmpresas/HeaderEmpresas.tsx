@@ -1,6 +1,7 @@
-import { useState } from 'react';
-import { Dialog } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Fragment, useState } from 'react';
+import { Dialog, Popover, Transition } from '@headlessui/react';
+import { Bars3Icon, ChevronDownIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import { AiOutlineCar } from 'react-icons/ai';
 
 const navigation = [
   { name: 'Inicio', href: '/' },
@@ -8,7 +9,10 @@ const navigation = [
   { name: 'Promociones', href: '#Promociones' },
   // { name: 'Sobre Nosotros', href: '#aboutUs' },
 ];
-
+const products = [
+  { name: 'Catálogo Empresa', href: '/catalogoEmpresa', icon: AiOutlineCar },
+  { name: 'Catálogo Persona Natural', href: '/catalogoNatural', icon: AiOutlineCar },
+];
 export default function HeaderEmpresas() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   return (
@@ -24,18 +28,53 @@ export default function HeaderEmpresas() {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-lg font-semibold leading-6 text-gold-goldButton">
-                {item.name}
-              </a>
-            ))}
-          </div>
+          <Popover.Group className="hidden lg:flex lg:gap-x-12">
+            <a href="/" className="text-lg font-semibold leading-6 text-gold-goldButton">
+              Inicio
+            </a>
+            <Popover className="relative">
+              <Popover.Button className="flex items-center gap-x-1 text-lg font-semibold leading-6 text-gold-goldButton">
+                Catálogo
+                <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
+              </Popover.Button>
+
+              <Transition
+                as={Fragment}
+                enter="transition ease-out duration-200"
+                enterFrom="opacity-0 translate-y-1"
+                enterTo="opacity-100 translate-y-0"
+                leave="transition ease-in duration-150"
+                leaveFrom="opacity-100 translate-y-0"
+                leaveTo="opacity-0 translate-y-1"
+              >
+                <Popover.Panel className="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+                  <div className="p-4">
+                    {products.map((item) => (
+                      <div key={item.name} className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                          <item.icon className="h-6 w-6 text-gray-600 group-hover:text-gold-goldText" aria-hidden="true" />
+                        </div>
+                        <div className="flex-auto">
+                          <a href={item.href} className="block font-semibold text-gray-900">
+                            {item.name}
+                            <span className="absolute inset-0" />
+                          </a>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </Popover.Panel>
+              </Transition>
+            </Popover>
+            <a href="#Promociones" className="text-lg font-semibold leading-6 text-gold-goldButton">
+              Promociones
+            </a>
+          </Popover.Group>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
               href="https://api.whatsapp.com/send/?phone=573143532474&text=Hola,+estoy+interesado+en+rentar+un+vehículo,+pordrían+brindarme+más+información,+gracias."
               target="_blank"
-              className="text-lg font-semibold leading-6 text-gold-goldButton"
+              className="text-lg font-semibold leading-6 text-gray-900"
               rel="noreferrer"
             >
               <span className="p-3 rounded-lg bg-gold-goldButton text-white hover:bg-gold-goldBg">Contáctenos</span>
@@ -50,13 +89,13 @@ export default function HeaderEmpresas() {
                 <span className="sr-only">Your Company</span>
                 <img className="h-8" src="./FDVFD-removebg-preview.png" alt="" />
               </a>
-              <button type="button" className="-m-2.5 rounded-md p-2.5 text-gold-goldButton" onClick={() => setMobileMenuOpen(false)}>
+              <button type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700" onClick={() => setMobileMenuOpen(false)}>
                 <span className="sr-only">Close menu</span>
                 <XMarkIcon className="h-6 w-6" aria-hidden="true" />
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y text-gold-goldButton">
+              <div className="-my-6 divide-y divide-gray-500/25">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <a key={item.name} href={item.href} className="-mx-3 block rounded-lg py-2 px-3 text-base font-semibold leading-7 text-white hover:bg-gray-800">
