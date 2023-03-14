@@ -75,7 +75,7 @@ const products = [
     imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
     price: '$1´400.000',
   },
- {
+  {
     id: 1,
     name: 'Nissan PANEL NV-350 NEW URVAN 2.5 TURBO DIESEL T.ALTO A -Vans A -Vans',
     color: '2023',
@@ -84,8 +84,6 @@ const products = [
     imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
     price: '$1´400.000',
   },
-  
-
   {
     id: 1,
     name: 'Chevrolet NHR Reward Euro IV -Liviano',
