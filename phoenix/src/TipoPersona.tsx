@@ -19,7 +19,7 @@ export default function TipoPersona() {
                       <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                         <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
                           <img
-                            src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+                            src="./toyota.jpg"
                             alt=""
                             className="h-full w-full object-cover object-center"
                           />
@@ -36,7 +36,7 @@ export default function TipoPersona() {
                         <div className="h-64 w-44 overflow-hidden rounded-lg"></div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <img
-                            src="https://images.unsplash.com/photo-1594502475942-1b20a139fb30?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
+                            src="./ojo.png"
                             alt=""
                             className="h-full w-full object-cover object-center"
                           />
@@ -45,23 +45,24 @@ export default function TipoPersona() {
                       </div>
                       <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <img src="./van.jfif" alt="" className="h-full w-full object-cover object-center" />
+                          <img src="./cams.png" alt="" className="h-full w-full object-cover object-center" />
                         </div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <img src="./camiones.jfif" alt="" className="h-full w-full object-cover object-center" />
+                          <img src="./vass.png" alt="" className="h-full w-full object-cover object-center" />
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="mx-auto space-x-2 justify-center">
-                  <a href="/catalogoNatural" className="rounded-lg border border-transparent bg-gold-goldTitle py-3 px-8 text-center font-normal text-white hover:bg-gold-goldText">
-                    Catálogo Natutal
-                  </a>
-                  <a href="/catalogoEmpresa" className="rounded-lg border border-transparent bg-gold-goldTitle py-3 px-8 text-center font-normal text-white hover:bg-gold-goldText">
-                    Catálogo Empresa
-                  </a>
-                </div>
+                <div className="flex justify-start">
+  <a href="/catalogoNatural" className="rounded-lg border border-transparent bg-gold-goldTitle py-3 px-8 text-center font-normal text-white hover:bg-gold-goldText mr-4">
+    Catálogo Natutal
+  </a>
+  <a href="/catalogoEmpresa" className="rounded-lg border border-transparent bg-gold-goldTitle py-3 px-8 text-center font-normal text-white hover:bg-gold-goldText">
+    Catálogo Empresa
+  </a>
+</div>
+
               </div>
             </div>
           </div>

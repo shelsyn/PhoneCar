@@ -1,6 +1,8 @@
 import Products from 'Products';
 import RentingEmpresas from 'CatalogoEmpresas/RentingEmpresas';
 import HeaderEmpresas from 'CatalogoEmpresas/HeaderEmpresas';
+import { ContactUs } from 'ContactUs';
+import Footer from 'Footer';
 
 const products = [
   {
@@ -8,7 +10,7 @@ const products = [
     name: 'Toyota HILUX D.C. 4X4 DIESEL 2.4 AUTOMATICA -Pickup',
     color: '2023',
     href: 'https://api.whatsapp.com/send/?phone=573143532474&text=Hola,+quiero+información+sobre+la+Toyota+HILUX,+gracias.',
-    imageSrc: '../Toyota-Hylux.jpg',
+    imageSrc: './estee.jpg',
     imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
     price: '$1´400.000',
   },
@@ -17,7 +19,7 @@ const products = [
     name: 'Ford RANGER XL 3.2L DIESEL 4X4 -Pickup',
     color: '2023',
     href: 'https://api.whatsapp.com/send/?phone=573143532474&text=Hola,+quiero+información+sobre+la+Ford+RANGER+XL+3.2L+DIESEL+4X4,+gracias.',
-    imageSrc: './fordRY.jpeg',
+    imageSrc: './rangew.jpg',
     imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
     price: '$1´400.000',
   },
@@ -35,7 +37,7 @@ const products = [
     name: 'Mitsubishi L200 GLS AT SE -Pickup',
     color: '2023',
     href: 'https://api.whatsapp.com/send/?phone=573143532474&text=Hola,+quiero+información+sobre+la+Mitsubishi+L200,+gracias.',
-    imageSrc: './L200.jpg',
+    imageSrc: './mit.jpg',
     imageAlt: 'Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls.',
     price: '$1´400.000',
   },
@@ -174,6 +176,8 @@ export default function CatalogoEmpresa() {
         </div>
       </section>
       <Products />
+      <ContactUs />
+      <Footer />
       
     </>
   );

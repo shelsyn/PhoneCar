@@ -1,6 +1,10 @@
+import { Switch } from '@headlessui/react';
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline';
+import { useState } from 'react';
+import classNames from '../utils/ClassNames';
 
 export function ContactUs() {
+  const [agreed, setAgreed] = useState(false);
   return (
     <section id="ContactUs" className="pb-20">
       <div className="relative bg-white">
@@ -14,7 +18,7 @@ export function ContactUs() {
                   <dt className="sr-only">Número de teléfono</dt>
                   <dd className="flex">
                     <PhoneIcon className="h-6 w-6 flex-shrink-0 text-gray-400 mr-3" aria-hidden="true" />
-                    <a href="tel:+573023004987">+57 (302) 3331906</a>
+                    <a href="tel:+573143532474">+57 (314) 3532474</a>
                   </dd>
                 </div>
                 <div className="mt-3">
@@ -31,9 +35,8 @@ export function ContactUs() {
             <div className="mx-auto max-w-lg lg:max-w-none">
               <form className="grid grid-cols-1 gap-y-6">
                 <div>
-
                   <label htmlFor="name" className="sr-only">
-                    Nombre Completo
+                    Nombres
                   </label>
                   <input
                     type="text"
@@ -41,7 +44,20 @@ export function ContactUs() {
                     id="name"
                     autoComplete="name"
                     className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm phoenix_car@outlook.com phoenix_car@outlook.com"
-                    placeholder="Nombre *"
+                    placeholder="Nombres *"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="lastName" className="sr-only">
+                    Apellidos
+                  </label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    autoComplete="name"
+                    className="block w-full rounded-md border-gray-300 py-3 px-4 placeholder-gray-500 shadow-sm phoenix_car@outlook.com phoenix_car@outlook.com"
+                    placeholder="Apellidos *"
                   />
                 </div>
                 <div>
@@ -84,9 +100,39 @@ export function ContactUs() {
                   />
                 </div>
                 <div>
+                  <Switch.Group as="div" className="flex gap-x-4 sm:col-span-2">
+                    <div className="flex h-6 items-center">
+                      <Switch
+                        checked={agreed}
+                        onChange={setAgreed}
+                        className={classNames(
+                          agreed ? 'bg-gold-goldText' : 'bg-gray-200',
+                          'flex w-8 flex-none cursor-pointer rounded-full p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                        )}
+                      >
+                        <span className="sr-only">Agree to policies</span>
+                        <span
+                          aria-hidden="true"
+                          className={classNames(
+                            agreed ? 'translate-x-3.5' : 'translate-x-0',
+                            'h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out'
+                          )}
+                        />
+                      </Switch>
+                    </div>
+                    <Switch.Label className="text-sm leading-6 text-gray-600">
+                      Aceptas la política de protección de datos personales{' '}
+                      <a href="#Home" className="font-semibold text-gold-goldText">
+                        políticas&nbsp;de&nbsp;privacidad
+                      </a>
+                      .
+                    </Switch.Label>
+                  </Switch.Group>
+                </div>
+                <div>
                   <button
                     type="submit"
-                    className="inline-flex justify-center rounded-md border border-transparent bg-gold-goldText py-3 px-6 text-base font-medium text-white shadow-sm hover:bg-gold-goldTitle focus:outline-none focus:ring-2 focus:ring-gold-goldText focus:ring-offset-2"
+                    className="inline-flex justify-center items-center rounded-md border border-transparent bg-gold-goldText py-3 px-6 text-base font-medium text-white shadow-sm hover:bg-gold-goldTitle focus:outline-none focus:ring-2 focus:ring-gold-goldText focus:ring-offset-2"
                   >
                     Enviar
                   </button>
