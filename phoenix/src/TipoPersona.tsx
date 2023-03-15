@@ -18,11 +18,7 @@ export default function TipoPersona() {
                     <div className="flex items-center space-x-6 lg:space-x-8">
                       <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                         <div className="h-64 w-44 overflow-hidden rounded-lg sm:opacity-0 lg:opacity-100">
-                          <img
-                            src="./toyota.jpg"
-                            alt=""
-                            className="h-full w-full object-cover object-center"
-                          />
+                          <img src="./toyota.jpg" alt="" className="h-full w-full object-cover object-center" />
                         </div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
                           <img
@@ -35,11 +31,7 @@ export default function TipoPersona() {
                       <div className="grid flex-shrink-0 grid-cols-1 gap-y-6 lg:gap-y-8">
                         <div className="h-64 w-44 overflow-hidden rounded-lg"></div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg">
-                          <img
-                            src="./ojo.png"
-                            alt=""
-                            className="h-full w-full object-cover object-center"
-                          />
+                          <img src="./ojo.png" alt="" className="h-full w-full object-cover object-center" />
                         </div>
                         <div className="h-64 w-44 overflow-hidden rounded-lg"></div>
                       </div>
@@ -55,19 +47,18 @@ export default function TipoPersona() {
                   </div>
                 </div>
                 <div className="flex justify-start">
-  <a href="/catalogoNatural" className="rounded-lg border border-transparent bg-gold-goldTitle py-3 px-8 text-center font-normal text-white hover:bg-gold-goldText mr-4">
-    Catálogo Natutal
-  </a>
-  <a href="/catalogoEmpresa" className="rounded-lg border border-transparent bg-gold-goldTitle py-3 px-8 text-center font-normal text-white hover:bg-gold-goldText">
-    Catálogo Empresa
-  </a>
-</div>
-
+                  <a href="/catalogoNatural" className="rounded-lg border border-transparent bg-gold-goldTitle py-3 px-8 text-center font-normal text-white hover:bg-gold-goldText mr-4">
+                    Catálogo Natutal
+                  </a>
+                  <a href="/catalogoEmpresa" className="rounded-lg border border-transparent bg-gold-goldTitle py-3 px-8 text-center font-normal text-white hover:bg-gold-goldText">
+                    Catálogo Empresa
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  );
+  );
 }

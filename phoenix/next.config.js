@@ -4,7 +4,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: false,
   images: {
-    domains: ['images.unsplash.com', 'images.pexels.com', 'ui-avatars.com', 'firebasestorage.googleapis.com'],
+    domains: ['images.unsplash.com', 'images.pexels.com', 'ui-avatars.com'],
   },
 };
 
