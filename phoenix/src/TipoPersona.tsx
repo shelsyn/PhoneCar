@@ -5,7 +5,7 @@ export default function TipoPersona() {
         <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
           <div className="relative mx-auto max-w-7xl px-4 sm:static sm:px-6 lg:px-8">
             <div className="sm:max-w-lg">
-              <h1 className="font text-4xl font-bold tracking-tight text-gold-goldTitle sm:text-6xl">Nuestro Catálogo</h1>
+              <h1 className="font text-4xl font-bold tracking-tight text- sm:text-6xl">Nuestro Catálogo</h1>
               <p className="mt-4 text-xl text-gray-500">
                 Optimiza tu tiempo y ahorra dinero con nuestro servicio de renting de carros. ¡Explora nuestro completo catálogo y elige el vehículo perfecto para ti!
               </p>
