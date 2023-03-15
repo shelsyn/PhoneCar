@@ -268,8 +268,8 @@ export default function CatalogoPersonaNatural() {
           </div>
         </div>
       </section>
-      <ContactUs />
       <Products />
+      <ContactUs />
       <Footer />
       <div className="z-[100]">
         <a
