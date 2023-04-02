@@ -60,5 +60,10 @@ export default function TipoPersona() {
         </div>
       </div>
     </section>
+<<<<<<< HEAD
     );
   }
+=======
+  );
+}
+>>>>>>> bb59563f2ec3332459db8098b3500f571437628e
