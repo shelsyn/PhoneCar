@@ -11,7 +11,7 @@ export function ContactUs() {
         <div className="relative mx-auto max-w-7xl lg:grid lg:grid-cols-5">
           <div className="bg-white py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12">
             <div className="mx-auto max-w-lg">
-              <h2 className="text-2xl font-bold tracking-tight phoenix_car@outlook.com sm:text-3xl">Contáctanos</h2>
+              <h2 className="text-2xl font-bold tracking-tight text-gold-goldTitle phoenix_car@outlook.com sm:text-3xl">Contáctanos</h2>
               <p className="mt-3 text-lg leading-6 text-gray-500">Estaremos respondiendo lo mas pronto posible.</p>
               <dl className="mt-8 text-base text-gray-500">
                 <div className="mt-6">
